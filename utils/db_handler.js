@@ -3,5 +3,6 @@ const knex = require('knex')({
     connection: {
         filename: './mydb.sqlite',
     },
+    useNullAsDefault: true
 });
 module.exports = knex;
